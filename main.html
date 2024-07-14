@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Woordle-7-Druif</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Woordle-7-Druif</h1>
+        <div id="game-board">
+            <!-- 6 rows for guesses, each with 7 letter blocks -->
+            <div class="row">
+                <div class="letter"></div>
+                <div class="letter"></div>
+                <div class="letter"></div>
+                <div class="letter"></div>
+                <div class="letter"></div>
+                <div class="letter"></div>
+                <div class="letter"></div>
+            </div>
+            <div class="row">
+                <div class="letter"></div>
+                <div class="letter"></div>
+                <div class="letter"></div>
+                <div class="letter"></div>
+                <div class="letter"></div>
+                <div class="letter"></div>
+                <div class="letter"></div>
+            </div>
+            <div class="row">
+                <div class="letter"></div>
+                <div class="letter"></div>
+                <div class="letter"></div>
+                <div class="letter"></div>
+                <div class="letter"></div>
+                <div class="letter"></div>
+                <div class="letter"></div>
+            </div>
+            <div class="row">
+                <div class="letter"></div>
+                <div class="letter"></div>
+                <div class="letter"></div>
+                <div class="letter"></div>
+                <div class="letter"></div>
+                <div class="letter"></div>
+                <div class="letter"></div>
+            </div>
+            <div class="row">
+                <div class="letter"></div>
+                <div class="letter"></div>
+                <div class="letter"></div>
+                <div class="letter"></div>
+                <div class="letter"></div>
+                <div class="letter"></div>
+                <div class="letter"></div>
+            </div>
+            <div class="row">
+                <div class="letter"></div>
+                <div class="letter"></div>
+                <div class="letter"></div>
+                <div class="letter"></div>
+                <div class="letter"></div>
+                <div class="letter"></div>
+                <div class="letter"></div>
+            </div>
+        </div>
+        <div id="keyboard">
+            <!-- Row 1 -->
+            <div class="key-row">
+                <button class="key">Q</button>
+                <button class="key">W</button>
+                <button class="key">E</button>
+                <button class="key">R</button>
+                <button class="key">T</button>
+                <button class="key">Y</button>
+                <button class="key">U</button>
+                <button class="key">I</button>
+                <button class="key">O</button>
+                <button class="key">P</button>
+            </div>
+            <!-- Row 2 -->
+            <div class="key-row">
+                <button class="key">A</button>
+                <button class="key">S</button>
+                <button class="key">D</button>
+                <button class="key">F</button>
+                <button class="key">G</button>
+                <button class="key">H</button>
+                <button class="key">J</button>
+                <button class="key">K</button>
+                <button class="key">L</button>
+            </div>
+            <!-- Row 3 -->
+            <div class="key-row">
+                <button class="key special-key" id="delete">Del</button>
+                <button class="key">Z</button>
+                <button class="key">X</button>
+                <button class="key">C</button>
+                <button class="key">V</button>
+                <button class="key">B</button>
+                <button class="key">N</button>
+                <button class="key">M</button>
+                <button class="key special-key" id="enter">Enter</button>
+            </div>
+        </div>
+        <p id="message"></p>
+    </div>
+
+    <!-- Modal HTML -->
+    <div id="winModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p id="winMessage">Je hebt gewonnen!!</p>
+            <p>Het woord was: <span id="correctWord"></span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
